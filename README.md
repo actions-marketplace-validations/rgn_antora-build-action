@@ -23,3 +23,13 @@ uses: rgn/antora-build-action@v1
 with:
   playbook: 'antora-playbook.prd.yml'
 ```
+
+Build the documentationw with private repostiories.
+
+``` yml
+uses:
+with:
+  playbook: '<yourplaybook.yml>'
+env:
+  GIT_CREDENTIALS: ${{secrets.GIT_CREDENTIALS}}
+```
